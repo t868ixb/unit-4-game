@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" media="screen" href="../unit-4-game/assets/css/reset.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="../unit-4-game/assets/css/style.css" />
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <title>IBayon - Unit-4-Game - Homework 4</title>
+
+</head>
+
+<body>
+    <nav>
+        <H1>Welcome to my game!!</H1>
+
+    </nav>
+    <div class="container">
+        <!-- row 1 will hold the title box -->
+        <div class="row">
+            <div class="col-sm-6 col-md-6">
+                <h6>row1.col1</h6>
+                <div class="card">
+                    <div class="card-header">
+                        <h6 class="card-title">header box</h6>
+                    </div>
+                    <!-- not sure I need a body for this card -->
+                    <div class="card-body text-center">
+                        <p id="game-title">may not need this</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-6">
+                <h6>row1.col2</h6>
+            </div>
+        </div>
+        <!-- row 2 will hold the instructions -->
+        <div class="row">
+            <div class="col-sm-6 col-md-6">
+                <h6>row2.col1</h6>
+                <div class="card">
+                    <div class="card-header">
+                        <h6 class="card-title">Game instructions here</h6>
+                    </div>
+                    <!-- how to play game goes here -->
+                    <div class="card-body text-center">
+                        <p id="game-rules">do this, do that</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-6">
+                <h6>row2.col2</h6>
+
+            </div>
+        </div>
+        <!-- row 3 will hold the random computer number and the counters (maybe) -->
+        <div class="row">
+            <div class="col-sm-6 col-md-6">
+                <h6>row3.col1</h6>
+                <!-- maybe create a row in here to keep things tighter -->
+                <div class="card">
+                    <div class="card-header">
+                        <h6 class="card-title">Computer random number Pick</h6>
+                    </div>
+                    <!-- here goes the random number between 19 and 120 -->
+                    <div class="card-body text-center">
+                        <p id="computer-pick">???</p>
+                    </div>
+                </div>
+            </div>
+            <!-- this column will hold the stats -->
+            <div class="col-sm-6 col-md-6">
+                <h6>row3.col2</h6>
+                <div class="card">
+                    <div class="card-header">
+                        <h6 class="card-title">Counters section</h6>
+                    </div>
+                    <!-- here goes the win counter -->
+                    <div class="card-body text-center">
+                        <h6> Your wins: 
+                            <p id="wins">0</p>
+                        </h6>
+                    </div>
+                    <!-- here goes the losses counter -->
+                    <div class="card-body text-center">
+                        <h6> Computer wins: 
+                            <p id="losses">0</p>
+                        </h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- row 4 will hold the gem buttons -->
+    <div class="row">
+        <div class="col-sm-6 col-md-6">
+            <h6>row4.col1</h6>
+            <div class="allCrystals text-center">
+                <button id="button-1" class="border-0" data-value="1"><img src="../unit-4-game/assets/images/blue.png"
+                        width="50px" height="50px" /></button>
+                <button id="button-2" class="border-0" data-value="2"><img src="../unit-4-game/assets/images/red.png"
+                        width="50px" height="50px" /></button>
+                <button id="button-3" class="border-0" data-value="3"><img src="../unit-4-game/assets/images/green.png"
+                        width="50px" height="50px" /></button>
+                <button id="button-4" class="border-0" data-value="4"><img src="../unit-4-game/assets/images/purple.jpg"
+                        width="50px" height="50px" /></button>
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-6">
+            <h6>row4.col2</h6>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-6 col-md-6">
+            <h6>row5.col1</h6>
+        </div>
+        <div class="col-sm-6 col-md-6">
+            <h6>row5.col2</h6>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-6 col-md-6">
+            <h6>row6.col1.Gem totals as user clicks goes here</h6>
+            <div class="card">
+                <div class="card-header">
+                    <h6 class="card-title">Your Total</h6>
+                </div>
+                <!-- here goes the random number between 19 and 120 -->
+                <div class="card-body text-center">
+                    <p id="your-total">???</p>
+                </div>
+            </div>
+
+        </div>
+        <div class="col-sm-6 col-md-6">
+            <h6>row6.col2</h6>
+        </div>
+
+    </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="../unit-4-game/assets/javascript/game.js"></script>
+</body>
+
+</html>
